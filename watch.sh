@@ -3,7 +3,7 @@
 # ./watch.sh game sdcard
 
 while true; do
-    inotifywait -e close_write *.py
+    inotifywait -e close_write -r *
     cp -a * $2
     cp $2/$1 $2/main.py
 done
