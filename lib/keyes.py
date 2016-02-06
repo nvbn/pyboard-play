@@ -13,7 +13,7 @@ class Joystick(object):
 
     @property
     def x(self):
-        return -(self._pin_y.read() - 2000) / 20
+        return (self._pin_y.read() - 2000) / 20
 
     @property
     def clicked(self):
